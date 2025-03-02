@@ -1,0 +1,28 @@
+https://nodejs.org/en/download/prebuilt-installer
+
+node --version
+
+--Criar projeto cypress(Dentro da pasta do projeto):
+npm init -y
+
+--Instalar o cypruss (Dentro da pasta do projeto):
+npm install cypress
+
+--Abrir o terminal Cypress: 
+npx cypress open
+
+--Pra encerrar a execução:
+Ctrl + C
+
+--Para executar no modo headless (Sem abrir o navegador)
+npx cypress run
+
+--Para rodar apenas um unico teste:
+npx cypress run --spec ".\cypress\e2e\nome-do-teste.cy.js"
+
+##Mochawesome (gerar documentação html ou json)
+--instalar:
+npm install --save-dev mochawesome
+
+--para executar:
+npx cypress run --reporter mochawesome
